@@ -154,7 +154,9 @@ $tipo = tipo_libro::all();
                                     </div>
                                 </div>
                             </div>
-                           
+                            <a href="{{ route('autores.create') }}" type="button" class="btn btn-success">Nuevo autor</a>
+                            <a href="{{ route('editoriales.create') }}" type="button" class="btn btn-success">Nueva editorial</a>
+                            <a href="{{ route('tipo_libro.create') }}" type="button" class="btn btn-success">Nuevo tipo de libro</a>
                         </form>      
                 </div>
             </div>

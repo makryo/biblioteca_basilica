@@ -25,7 +25,7 @@ and libros.autor_id = autors.id');
                 <div id="home" class="tab-pane fade in active">
                 <h3>Bienvenido {{ Auth::user()->name }}</h3>
                 <div class="card">
-                    <div class="card-header">{{ __('Dashboard') }}</div>
+                    <div class="card-header">Quienes somos</div>
 
                         <div class="card-body">
                             @if (session('status'))
@@ -34,7 +34,19 @@ and libros.autor_id = autors.id');
                                 </div>
                             @endif
 
-                            {{ __('You are logged in!') }}
+                            <div class="card border-primary mb-3" style="max-width: 20rem;">
+                              <div class="card-header">Biblioteca abad Mateo Martin</div>
+                              <div class="card-body">
+                                <h4 class="card-title">Quienes somos</h4>
+                                <p class="card-text">Somos una biblioteca abierta al publico general con la finalidad de que la poblacion puedan leer libros sin ningun costo</p>
+                                <h4>Direccion: Dentro de la basilica de esquipulas al lado de jardineria.</h4>
+                                <h4>Contacto: 53413123</h4>
+                                
+                                <a href="https://www.facebook.com/profile.php?id=100010047666222">Fanpage de facebook</a>
+                              </div>
+                            </div>
+
+
                         </div>
                     </div>
                 </div>
